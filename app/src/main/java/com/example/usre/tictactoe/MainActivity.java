@@ -108,6 +108,21 @@ public class MainActivity extends AppCompatActivity implements OnClickListener{
 
     }
 
+    private void AllButtonsAction(boolean enable) {
+        for(Button b: bArray){
+
+            b.setClickable(enable);
+
+            if(enable){
+                b.setBackgroundColor(Color.parseColor("#33b5e5"));
+                b.setText("");
+
+            }else{
+                b.setBackgroundColor(Color.LTGRAY);
+            }
+
+        }
+    }
 
 
 
