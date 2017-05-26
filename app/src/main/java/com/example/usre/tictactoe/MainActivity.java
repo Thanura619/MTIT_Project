@@ -123,6 +123,24 @@ public class MainActivity extends AppCompatActivity implements OnClickListener{
 
         }
     }
+    public void buttonClicked(Button b){
+
+        if(turn) {
+            b.setText("X");
+
+        }else{
+            b.setText("O");
+
+        }
+        turn_count++;
+
+        b.setBackgroundColor(Color.LTGRAY);
+        b.setClickable(false);
+        turn = !turn;
+
+        checkForWinner();
+
+    }
 
     private void toast(String message){
         Toast.makeText(getApplicationContext(),message, Toast.LENGTH_SHORT).show();
