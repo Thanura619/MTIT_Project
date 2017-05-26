@@ -124,6 +124,13 @@ public class MainActivity extends AppCompatActivity implements OnClickListener{
         }
     }
 
+    private void toast(String message){
+        Toast.makeText(getApplicationContext(),message, Toast.LENGTH_SHORT).show();
+
+    }
+
+
+
 
 
 }
