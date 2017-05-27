@@ -81,15 +81,14 @@ public class MainActivity extends AppCompatActivity implements OnClickListener{
         }else if(a2.getText()==b2.getText() && b2.getText()== c2.getText() && !b2.isClickable()){
             winner=true;
 
-        }else if(a3.getText()==b3.getText() && b2.getText()== c3.getText() && !c3.isClickable()){
+        }else if(a3.getText()==b3.getText() && b3.getText()== c3.getText() && !c3.isClickable()){
             winner=true;
 
-        }else if(a1.getText()==b2.getText() && b2.getText()== b2.getText() && !a1.isClickable()){
+        }else if(a1.getText()==b2.getText() && b2.getText()== c3.getText() && !a1.isClickable()){
             winner=true;
 
-        }else if(a3.getText()==b2.getText() && b2.getText()== b2.getText() && !b2.isClickable()){
+        }else if(a3.getText()==b2.getText() && b2.getText()== c1.getText() && !b2.isClickable()){
             winner=true;
-
         }
 
         if(winner){
